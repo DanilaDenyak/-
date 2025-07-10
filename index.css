@@ -1,0 +1,84 @@
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f0f4f8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background: radial-gradient(circle, rgb(76, 167, 139), rgb(50, 130, 110));
+          min-height: 100vh;
+      }
+      .registration-container {
+          padding: 40px 30px;
+          border-radius: 10px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+          width: 100%;
+          background: radial-gradient(circle, rgb(76, 167, 139), rgb(50, 130, 110));
+          margin-top: auto;
+      }
+      .forms-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+        flex-wrap: nowrap;
+      }
+
+      form {
+          display: flex;
+          flex-direction: column;
+      }
+
+      label {
+          margin-bottom: 8px;
+          font-weight: bold;
+          color: #242424;
+      }
+      h2 {
+        color: #242424;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+          padding: 8px 5px;
+          margin-bottom: 15px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+          transition: border-color 0.3s, box-shadow 0.3s;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+          border-color: #007BFF;
+          box-shadow: 0 0 8px rgba(0,123,255,0.2);
+          outline: none;
+      }
+
+button {
+  font: inherit;
+  background-color: #f0f0f0;
+  border: 0;
+  color: #242424;
+  border-radius: 0.5em;
+  font-size: 1.35rem;
+  padding: 0.375em 1em;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+button:active {
+  translate: (0, 0.225em);
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+button:hover {
+  letter-spacing: 1px;
+  background-color: hsl(135, 30%, 55%);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.3);
+  transition: all 0.3s ease;
+}
