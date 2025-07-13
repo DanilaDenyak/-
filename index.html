@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Мессенджер</title>
-  </head>
-  <body>
-  <div class="forms-wrapper">
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Мессенджер</title>
+</head>
+<body>
+<div class="forms-wrapper">
   <div class="registration-container">
-  <form action="/submit_registration" method="post">
-    <h2>Уже есть учётная запись?</h2>
-    <label for="email">Почта:</label>
-    <input type="email" id="email" name="email"  required><br>
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" maxlength="10" placeholder="Введите пароль:" required><br>
-    <button type="submit">Войти</button>
-  </form>
+    <form action="/Messenger.html" method="get">
+      <h2>Уже есть учётная запись?</h2>
+      <label for="email">Почта:</label>
+      <input type="email" id="email" name="email"  required><br>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" maxlength="10" placeholder="Введите пароль:" required><br>
+      <button type="submit">Войти</button>
+    </form>
   </div>
   <div class="registration-container">
     <form action="/submit_registration" method="post">
@@ -24,11 +24,13 @@
       <label for="email2">Почта:</label>
       <input type="email" id="email2" name="email" placeholder="Привяжите свою почту: " required><br>
       <label for="password2">Пароль:</label>
-      <input type="password" id="password2" name="password" maxlength="10" placeholder="Придумайте пароль длиной до 10 символов" required><br>
+      <input type="password" id="password2" name="password" maxlength="10" placeholder="Придумайте пароль:" required><br>
+      <label for="password3">Повторите пароль: </label>
+      <input type="password" id="password3" name="password" maxlength="10" required><br>
       <button type="submit">Зарегистрироваться</button>
     </form>
   </div>
-  </div>
-    <div id="root"></div>
-  </body>
+</div>
+<div id="root"></div>
+</body>
 </html>
